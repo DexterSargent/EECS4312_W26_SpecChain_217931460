@@ -2,11 +2,103 @@
   "groups": [
     {
       "group_id": "G1",
-      "theme": "App crashes during activity logging, THIS IS A AN EXAMPLE, PLEASE REMOVE ",
-      "review_ids": ["rev_12", "rev_33", "rev_45", "rev_89"],
+      "theme": "Economic Barriers and Subscription Frustration",
+      "review_ids": [
+        "4cf4ff8a-3aec-4219-ba79-5cc645cc1b15",
+        "7af7329a-d6ad-4ccc-aa83-689da8e7eda3",
+        "7c1a1116-284a-4c13-a6b7-a280d0f18b9e",
+        "a360c212-f023-438c-991b-a3f28f3dd7ba",
+        "b7e23fb5-2b6e-4cf8-bd4c-0ec67b273a1a",
+        "7e59f4ee-e0c3-4213-9bb1-6f2d7b5deb9c",
+        "a01eb69d-877f-4ec3-8ada-e94608e0f2fd",
+        "39ef38ce-b7ed-4ad1-b391-98344d8e366d",
+        "c7058604-2d2a-4a5a-96b9-59ef01e8b946",
+        "5ffe111a-651f-4947-abd1-5a5e833fd3b2"
+      ],
       "example_reviews": [
-        "The app crashes every time I log my run.",
-        "Logging workouts causes the app to freeze."
+        "Everything but the introduction is paywalled. I do not need an app to notice what affects mood. Downloaded for the mental health resources, but will use something that offers a chance to text the benefits before charging.",
+        "Puts results behind a paywall after using for 14 days, thus making it useless"
+      ]
+    },
+    {
+      "group_id": "G2",
+      "theme": "Technical Stability and Notification Bugs",
+      "review_ids": [
+        "4d818c25-71e6-49f1-8a43-1c7cfd90e226",
+        "abe48d35-6cad-40f8-b5d9-a176ee371a4e",
+        "d66b13fb-dbd2-46e3-b70d-823311ff5a97",
+        "298bf8ee-bf8c-47b7-b2dc-59a5d9fa1947",
+        "c42bc3d3-d186-44f1-a017-6c93a1b82a28",
+        "b9081e54-336d-4c89-a696-0fb3924186b0",
+        "b0585e2b-d036-484b-a416-42d89d21e654",
+        "a0754d91-6af4-45bb-a21a-f3ecaf3bfd63",
+        "a0cc751b-bab3-47f1-bc59-b8d182f899a0",
+        "4c017c5e-f32f-4fb0-87fe-a33a093ce1f9"
+      ],
+      "example_reviews": [
+        "Won't let me log in, says internet connection lost, but all my other wifi dependent apps are fine.",
+        "When it works as intended, very useful! However it often does not actually record entries... This issue has been off and on over the years... but has gotten far worse recently.."
+      ]
+    },
+    {
+      "group_id": "G3",
+      "theme": "UI/UX Accessibility and Color Scheme Concerns",
+      "review_ids": [
+        "66ce8112-d0e1-4303-8562-d9658241c735",
+        "8a4f00c5-1f58-4bee-a59f-9f99821c47cb",
+        "c2c0ce22-01a9-4faf-8669-a83b2f7860dd",
+        "82dfee37-325b-4b80-9071-d8f6758df612",
+        "863dc982-6af1-419b-9eb0-dcdf7a8a9573",
+        "cd099cdc-e37e-49c7-a6ae-af59fb1a7b6e",
+        "8d4d704c-ea78-4644-b820-99af02fb7517",
+        "be212620-3c16-48d7-9e53-836222909da6",
+        "55267b33-92ed-4faf-a1ed-6d28cb34b0ba",
+        "1bd43c7c-4f5e-41c4-bb2c-4b8c268913ae"
+      ],
+      "example_reviews": [
+        "The new and current colour schemes are so completely wrong! Fix it up and put it back to what was it was!",
+        "the lifeline is a telephone number to call, which is inaccessible for many (deaf/HOH people for example)"
+      ]
+    },
+    {
+      "group_id": "G4",
+      "theme": "Self-Monitoring and Mood Pattern Insights",
+      "review_ids": [
+        "11eaf701-f192-4fe1-b934-82fc5aae67d1",
+        "6845c4de-e79c-4502-a20c-1ee0489bbb7e",
+        "391d1b92-7550-45dd-a398-061e51b97c4e",
+        "b893372f-9355-42b4-a296-8de516f710cd",
+        "680396ab-93d4-4113-8d5b-a57dd6cc495f",
+        "fa5d0149-f48d-4843-91ee-d986428a4297",
+        "1f3ecfee-8691-45d2-9425-7341779b6d30",
+        "d2721057-fa68-4a14-9a53-9f87fecb7959",
+        "94c72d45-0229-46e3-97a8-7220b6e138b4",
+        "cd620d46-75a9-405b-8bf5-62f85a5a5603"
+      ],
+      "example_reviews": [
+        "Good way to monitor and understand myself emotionally.",
+        "Seeing the patterns and what is reoccurring in my daily life has been eye-opening."
+      ]
+    },
+    {
+      "group_id": "G5",
+      "theme": "Clinical Integration and Professional Collaboration",
+      "review_ids": [
+        "bbb31449-236a-4773-87be-97b1b0c64a8d",
+        "becdaea2-c8f7-41c9-a504-e7727dc8c328",
+        "ed0e8b18-21ec-4b65-a47e-feead6b8cd87",
+        "014e7949-fa7e-4897-98fd-b228f6eeebb7",
+        "c183ecfd-6002-43c6-9a55-41ef08a4cd04",
+        "b9d4f34b-1a64-4cea-9f54-094e1f06c359",
+        "af1619d8-8b4a-499e-b2de-4b51051805e8",
+        "2830f36f-abe9-4e2c-9b61-35e646925641",
+        "ac523545-bdc5-4534-a6eb-ab964539907e",
+        "d4de01ac-b3f5-4fdd-816b-53b66338ec39"
+      ],
+      "example_reviews": [
+        "Very good for knowing what to tell the doctors",
+        "Really useful, I share the report with my therapist and it helps us know what to address."
       ]
     }
-  ]}
+  ]
+}

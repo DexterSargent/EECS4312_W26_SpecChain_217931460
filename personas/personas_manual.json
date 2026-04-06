@@ -1,22 +1,134 @@
-{  "personas": [
+{
+  "personas": [
     {
       "id": "P1",
-      "name": "Frequent Activity Tracker",
-      "description": "A user who relies on the app to log workouts frequently and expects stable performance.",
+      "name": "Cost-conscious explorer",
+      "description": "A user interested in improving their mental health but frustrated by limited access due to paywalls.",
       "derived_from_group": "G1",
       "goals": [
-        "Track workouts consistently",
-        "Log activity quickly"      ],
+        "Access meaningful mental health insights for free",
+        "Evaluate app value before committing to payment"
+      ],
       "pain_points": [
-        "App crashes during logging",
-        "Workout data sometimes disappears"      ],
+        "Most useful features are locked behind a subscription",
+        "Feels misled after initial free experience"
+      ],
       "context": [
-        "Logging activities immediately after workouts",
-        "Using the app during outdoor exercise"      ],
+        "Trying the app for the first time",
+        "Exploring mental health tools on a budget"
+      ],
       "constraints": [
-        "Logging must be reliable",
-        "Data should not be lost"       ],
+        "Limited willingness or ability to pay",
+        "Needs upfront value before subscribing"
+      ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_45"      ]
-    }  ] }
+        "4cf4ff8a-3aec-4219-ba79-5cc645cc1b15",
+        "5ffe111a-651f-4947-abd1-5a5e833fd3b2"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Frustrated reliability-seeker",
+      "description": "A long-term user who relies on the app for consistency but is hampered by technical bugs and instability.",
+      "derived_from_group": "G2",
+      "goals": [
+        "Maintain a consistent daily logging habit",
+        "Receive timely notifications for mood check-ins"
+      ],
+      "pain_points": [
+        "App crashes or freezes after updates",
+        "Notifications failing to trigger, leading to missed entries"
+      ],
+      "context": [
+        "Using the app as a primary tool for habit tracking",
+        "Accessing the app across different sessions/devices"
+      ],
+      "constraints": [
+        "Technical failures disrupt the therapeutic process",
+        "Requires a stable environment to feel secure about their sensitive personal data"
+      ],
+      "evidence_reviews": [
+        "4d818c25-71e6-49f1-8a43-1c7cfd90e226",
+        "298bf8ee-bf8c-47b7-b2dc-59a5d9fa1947"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Accessibility focused user",
+      "description": "A user with specific visual or physical needs who requires an inclusive and readable interface.",
+      "derived_from_group": "G3",
+      "goals": [
+        "Read interface content easily without eye strain",
+        "Access crisis support in a variety of accessible formats"
+      ],
+      "pain_points": [
+        "Inaccessible color schemes that are hard to read",
+        "Lack of inclusive options for deaf or hard-of-hearing users"
+      ],
+      "context": [
+        "Using the app while managing visual impairments or disabilities",
+        "Seeking support during periods of high sensory stress"
+      ],
+      "constraints": [
+        "UI must adhere to clear accessibility standards",
+        "Content must be inclusive of diverse user backgrounds"
+      ],
+      "evidence_reviews": [
+        "66ce8112-d0e1-4303-8562-d9658241c735",
+        "82dfee37-325b-4b80-9071-d8f6758df612"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "Insight-driven tracker",
+      "description": "A self-aware user focused on long-term data analysis to understand their symptoms and emotional triggers.",
+      "derived_from_group": "G4",
+      "goals": [
+        "Recognize recurring emotional patterns over time",
+        "Understand the circumstances affecting their mood"
+      ],
+      "pain_points": [
+        "Difficulty evaluating feelings without structured guidance",
+        "Vague insights that lack actionable background information"
+      ],
+      "context": [
+        "Using the app for daily self-reflection and journaling",
+        "Reviewing bi-weekly reports to monitor progress"
+      ],
+      "constraints": [
+        "Requires clear data visualization and summaries",
+        "Needs high-quality reflection questions to trigger insights"
+      ],
+      "evidence_reviews": [
+        "11eaf701-f192-4fe1-b934-82fc5aae67d1",
+        "fa5d0149-f48d-4843-91ee-d986428a4297"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "Clinical patient-collaborator",
+      "description": "A user who is actively in treatment and uses app data as a bridge to communicate with their therapist or doctor.",
+      "derived_from_group": "G5",
+      "goals": [
+        "Share accurate mood reports with health professionals",
+        "Identify specific topics to address during therapy sessions"
+      ],
+      "pain_points": [
+        "Forgetting symptoms or feelings between medical appointments",
+        "Lack of easy ways to export data for professional review"
+      ],
+      "context": [
+        "Regularly visiting a therapist, doctor, or mental health team",
+        "Using the app as a supplemental tool to professional clinical care"
+      ],
+      "constraints": [
+        "Data must be printable or easily sharable",
+        "Report formatting must be clear enough for professional use, but simple enough for patient to understand"
+      ],
+      "evidence_reviews": [
+        "bbb31449-236a-4773-87be-97b1b0c64a8d",
+        "d4de01ac-b3f5-4fdd-816b-53b68ec338ec39"
+      ]
+    }
+  ]
+}
