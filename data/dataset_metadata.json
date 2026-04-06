@@ -1,0 +1,20 @@
+{
+  "app_name": "Mind Doc",
+  "dataset_size": {
+    "raw_extracted": 5000,
+    "final_cleaned": 4286
+  },
+  "collection_method": "Extracted the 5,000 most recent English reviews from the Google Play Store using the 'google-play-scraper' Python library, sorted by 'NEWEST' to capture the most relevant user feedback.",
+  "cleaning_decisions": [
+    "Removed duplicate reviews to ensure unique data points.",
+    "Eliminated empty entries and reviews that contained only non-textual elements.",
+    "Discarded extremely short reviews (fewer than 3 words remaining after cleaning) that lacked sufficient context for requirement derivation.",
+    "Converted all text to lowercase for normalization.",
+    "Converted numerical digits to their word equivalents to preserve semantic meaning while removing symbols.",
+    "Removed punctuation, special characters, and emojis.",
+    "Eliminated redundant whitespace to ensure consistent formatting.",
+    "Removed standard English stop words to focus on content-rich terms.",
+    "Applied WordNet lemmatization to group inflected forms of words into their base dictionary form.",
+    "Minimized the dataset to include only essential fields for traceability: reviewId, content (cleaned), score, and content_original."
+  ]
+}
