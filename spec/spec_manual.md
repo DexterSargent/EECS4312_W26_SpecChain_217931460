@@ -3,7 +3,7 @@
 - Description: [The system shall provide read-only access to reports generated during the trial period for 12 months after trial period ends.]
 - Source Persona: [Cost-conscious explorer]
 - Traceability: [Derived from review group G1]
-- Acceptance Criteria: [Given the user has no active subscription and registered within 12 months, when the user views the reports page, all reports are accessible as pdf files.]
+- Acceptance Criteria: [Given the user has no active subscription and it is within 12 months of the expiration of the trial period, when the user views the reports page, all reports are accessible as pdf files.]
 
 # Requirement ID: FR2
 
@@ -31,7 +31,7 @@
 - Description: [The system shall display a "Crisis Support" button on all screens that initiates a pop-up with call, text, and email options to national crisis supports.]
 - Source Persona: [Accessibility focused user]
 - Traceability: [Derived from review group G3]
-- Acceptance Criteria: [When the user taps the "Crisis Support" button and selects an option (call/text/email), then the device native messaging app opens.]
+- Acceptance Criteria: [When the user taps the "Crisis Support" button and selects an option (call/text/email), then the device's relevant native handler (Dialer, SMS, or Email client) opens based on the user's selection.]
 
 # Requirement ID: FR6
 
@@ -63,7 +63,7 @@
 
 # Requirement ID: FR10
 
-- Description: [The system shall provide an encrypted transfer function for sharing generated PDF reports with a user-specified email recipient.]
+- Description: [The system shall provide a password protected download link for sharing generated PDF reports with a user-specified email recipient.]
 - Source Persona: [Clinical patient-collaborator]
 - Traceability: [Derived from review group G5]
-- Acceptance Criteria: [When the user confirms a report sharing action, then the system sends a secure link to the recipient email that expires within 24 hours.]
+- Acceptance Criteria: [Given a generated PDF report, when the user confirms the share action to a specific email address, the system sends an automated email containing a unique link that requires a user-defined password to access the file, and this link must expire and become inaccessible 24 hours after the timestamp of generation.]
