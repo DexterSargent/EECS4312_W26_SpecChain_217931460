@@ -111,7 +111,7 @@ def run_task_4_1_and_4_2():
     with open(output_groups_path, 'w', encoding='utf-8') as f:
         json.dump({"groups": final_groups}, f, indent=4)
 
-    # STAGE 3: Task 4.2 - Persona Generation
+    # Persona Generation
     print("Executing Task 4.2: Automated Persona Generation...")
     
     persona_prompt = f"""
@@ -144,7 +144,7 @@ def run_task_4_1_and_4_2():
         response_format={"type": "json_object"}
     )
     
-    # Save the prompt used (Requirement 4.1) [cite: 220]
+    # Save the prompt used
     os.makedirs('prompts', exist_ok=True)
     with open(prompt_path, 'w', encoding='utf-8') as f:
         json.dump({
@@ -152,7 +152,7 @@ def run_task_4_1_and_4_2():
             "step_4_2_prompt": persona_prompt
         }, f, indent=4)
 
-    # Save Personas [cite: 224]
+    # Save Personas
     os.makedirs('personas', exist_ok=True)
     with open(output_personas_path, 'w', encoding='utf-8') as f:
         json.dump(json.loads(persona_comp.choices[0].message.content), f, indent=4)
