@@ -1,13 +1,104 @@
 {
-  "groups": [
-    {
-      "group_id": "A1",
-      "theme": "Workout logging issues",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
-      "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
-      ]
-    }
-  ]
+    "groups": [
+        {
+            "group_id": "auto_G1",
+            "theme": "Frustration with Cost and Subscription Model",
+            "review_ids": [
+                "4cf4ff8a-3aec-4219-ba79-5cc645cc1b15",
+                "7af7329a-d6ad-4ccc-aa83-689da8e7eda3",
+                "a360c212-f023-438c-991b-a3f28f3dd7ba",
+                "39ef38ce-b7ed-4ad1-b391-98344d8e366d",
+                "5ffe111a-651f-4947-abd1-5a5e833fd3b2",
+                "ac69af3d-8de2-4bf1-bc05-8f5f08e1ba66",
+                "e45752e5-ba84-41b6-be18-d6a920a2f523",
+                "c086cabd-06df-428e-bbba-864e4bd0778c",
+                "3d61709a-0872-45b0-a4d8-27d8db423c5a",
+                "7c1a1116-284a-4c13-a6b7-a280d0f18b9e"
+            ],
+            "example_reviews": [
+                "perhaps biased tried similar apps much like one present option available",
+                "everything introduction paywalled need app notice affect mood downloaded mental health resource use something offer chance text benefit charging"
+            ]
+        },
+        {
+            "group_id": "auto_G2",
+            "theme": "App Functionality and User Experience",
+            "review_ids": [
+                "4c647c1c-6e45-442c-a691-42ee61a230a1",
+                "7d8e4a8f-8468-4809-aa92-29643791977e",
+                "11eaf701-f192-4fe1-b934-82fc5aae67d1",
+                "25942a27-320a-4e7e-a7b4-3153bd5b405f",
+                "744404cb-b45b-4d48-a82d-aad7f42ecb69",
+                "b9ef6b5a-632b-495a-9e62-969a23fae1d0",
+                "827abad8-c21a-4f99-b1d6-f1c8dced667c",
+                "3bc9f848-fdd6-4fbc-9c95-83d022623b5c",
+                "f3d3b5d7-cde8-45b6-8f9a-09cbfb3b7a7d",
+                "e43cabdd-bfdf-412d-a5b5-c9bcc761aab2"
+            ],
+            "example_reviews": [
+                "good app cannot change te language",
+                "im going try hear voice person sometimes mean insulting"
+            ]
+        },
+        {
+            "group_id": "auto_G3",
+            "theme": "Mental Health Insights and Support",
+            "review_ids": [
+                "6f006dd6-ee8c-44db-b8c8-2b5ad3570d1c",
+                "b893372f-9355-42b4-a296-8de516f710cd",
+                "5036b45c-d0ea-4320-8218-611ca36535d1",
+                "bbb31449-236a-4773-87be-97b1b0c64a8d",
+                "680396ab-93d4-4113-8d5b-a57dd6cc495f",
+                "9381054c-7081-4294-9fc3-1b8702a6d6b4",
+                "e35d746a-4924-478d-92f2-c5184cc7c8c3",
+                "bc24eb71-77c8-4ef8-82ba-dbc6c03d5e4c",
+                "81c6e690-0ce4-4d0f-acf6-e2678939e1aa",
+                "ac523545-bdc5-4534-a6eb-ab964539907e"
+            ],
+            "example_reviews": [
+                "app great completely free check mood answer handful question time day private course look material course follow depending feel need like exhausted want increase strength mentally physically etc highly recommended",
+                "really helpful daily reminder track mood also like give report overall mental health track think emotion choice bit limitedfor example im surprised stressed isnt overall good app"
+            ]
+        },
+        {
+            "group_id": "auto_G4",
+            "theme": "Technical Issues and Bugs",
+            "review_ids": [
+                "42ec88b7-ead2-421f-b753-f5d071afa0a0",
+                "d07ac3a5-2557-4ac8-a70c-27abf4f3c7db",
+                "e6619604-b5d3-49c1-8733-09c6373b0e1d",
+                "8fdd77f7-57a2-4301-91d0-9dc678baa098",
+                "735dd19a-1b69-4ce1-81a9-77c33b5312d1",
+                "e57fd9ce-d1b7-4829-8e28-ad2b3566f789",
+                "b7e23fb5-2b6e-4cf8-bd4c-0ec67b273a1a",
+                "abe48d35-6cad-40f8-b5d9-a176ee371a4e",
+                "967136a2-4e76-484b-99d1-6717ce5f89d9",
+                "99662db6-51dd-416c-80c3-1150cb7c75d1"
+            ],
+            "example_reviews": [
+                "depth cheep commercial like advice u may different openion try see ur self",
+                "pretty good app used every day two year biweekly result great way see sort big picture im feeling update negative say app keep asking leave review every day despite fact already left review review good three year ago"
+            ]
+        },
+        {
+            "group_id": "auto_G5",
+            "theme": "Professional and Clinical Integration",
+            "review_ids": [
+                "89f457e0-90a6-4570-955a-696bce251acd",
+                "66ce8112-d0e1-4303-8562-d9658241c735",
+                "becdaea2-c8f7-41c9-a504-e7727dc8c328",
+                "36e0167b-6774-4bc1-8705-58458a707ab1",
+                "94c72d45-0229-46e3-97a8-7220b6e138b4",
+                "78f7da0e-9ea3-4858-8509-cfd23b1d61ca",
+                "416d5016-8ff9-490b-8fdb-dcf7eb9f1d29",
+                "afc24601-34a5-42cd-8695-f7073c2003f2",
+                "014e7949-fa7e-4897-98fd-b228f6eeebb7",
+                "9e67810a-0f04-455e-80e3-ebc69baf39d5"
+            ],
+            "example_reviews": [
+                "really helpful edit well using app two week damn never thought would perfect literally best app ever downloaded entire life really help made seriously consider therapist step made pay attention responded question suicidal thought underestimation matter sent therapy rebort based application realistic",
+                "great app currently error try sign premium membership impossible upgrade moment cannot use premium feature ive sent email told known issue would resolved soon however still resolved still cannot upgrade resolve issue change rating thanks"
+            ]
+        }
+    ]
 }

@@ -1,0 +1,139 @@
+{
+    "personas": [
+        {
+            "id": "auto_P1",
+            "name": "Frustrated Filer",
+            "description": "A user who is frustrated with the cost and subscription model of the app, seeking affordable mental health support.",
+            "derived_from_group": "auto_G1",
+            "goals": [
+                "Find an affordable mental health support app",
+                "Understand the costs and subscription models before committing"
+            ],
+            "pain_points": [
+                "High costs and unexpected charges",
+                "Complex and unclear subscription models",
+                "Limited access to features without a paid subscription"
+            ],
+            "context": [
+                "Researching mental health apps online",
+                "Reading reviews and comparing features and prices"
+            ],
+            "constraints": [
+                "Limited budget for mental health support",
+                "Concerns about being charged unexpectedly"
+            ],
+            "evidence_reviews": [
+                "4cf4ff8a-3aec-4219-ba79-5cc645cc1b15",
+                "7af7329a-d6ad-4ccc-aa83-689da8e7eda3"
+            ]
+        },
+        {
+            "id": "auto_P2",
+            "name": "UX Enthusiast",
+            "description": "A user who values a seamless and intuitive app experience, with a focus on functionality and user experience.",
+            "derived_from_group": "auto_G2",
+            "goals": [
+                "Find an app with a user-friendly interface",
+                "Easily navigate and use the app's features"
+            ],
+            "pain_points": [
+                "Difficulties with app navigation and usability",
+                "Limited language options",
+                "Inconsistent or poor app performance"
+            ],
+            "context": [
+                "Using the app daily to track mental health",
+                "Exploring different app features and settings"
+            ],
+            "constraints": [
+                "Limited technical expertise",
+                "Expectations for a modern and responsive app design"
+            ],
+            "evidence_reviews": [
+                "4c647c1c-6e45-442c-a691-42ee61a230a1",
+                "7d8e4a8f-8468-4809-aa92-29643791977e"
+            ]
+        },
+        {
+            "id": "auto_P3",
+            "name": "Mental Health Advocate",
+            "description": "A user who seeks comprehensive mental health insights and support, with a focus on tracking and understanding their mental well-being.",
+            "derived_from_group": "auto_G3",
+            "goals": [
+                "Gain a deeper understanding of their mental health",
+                "Track and monitor their mental well-being over time"
+            ],
+            "pain_points": [
+                "Limited insights or feedback on mental health",
+                "Insufficient tracking features or data analysis",
+                "Lack of personalized recommendations or support"
+            ],
+            "context": [
+                "Using the app to track mental health daily",
+                "Seeking support and guidance for mental health concerns"
+            ],
+            "constraints": [
+                "Limited knowledge about mental health and wellness",
+                "Expectations for evidence-based and reliable information"
+            ],
+            "evidence_reviews": [
+                "6f006dd6-ee8c-44db-b8c8-2b5ad3570d1c",
+                "b893372f-9355-42b4-a296-8de516f710cd"
+            ]
+        },
+        {
+            "id": "auto_P4",
+            "name": "Tech-Savvy Troubleshooter",
+            "description": "A user who encounters technical issues and bugs, seeking a stable and reliable app experience.",
+            "derived_from_group": "auto_G4",
+            "goals": [
+                "Resolve technical issues and bugs",
+                "Find a stable and reliable app experience"
+            ],
+            "pain_points": [
+                "Frequent crashes or app freezes",
+                "Technical issues with login or account management",
+                "Bugs or glitches that hinder app usage"
+            ],
+            "context": [
+                "Using the app daily and encountering technical issues",
+                "Seeking support and troubleshooting guidance"
+            ],
+            "constraints": [
+                "Technical expertise to troubleshoot issues",
+                "Expectations for a stable and reliable app experience"
+            ],
+            "evidence_reviews": [
+                "42ec88b7-ead2-421f-b753-f5d071afa0a0",
+                "d07ac3a5-2557-4ac8-a70c-27abf4f3c7db"
+            ]
+        },
+        {
+            "id": "auto_P5",
+            "name": "Clinical Connector",
+            "description": "A user who seeks professional and clinical integration, with a focus on connecting with therapists or healthcare professionals.",
+            "derived_from_group": "auto_G5",
+            "goals": [
+                "Connect with a therapist or healthcare professional",
+                "Find an app that integrates with clinical services"
+            ],
+            "pain_points": [
+                "Limited access to professional support",
+                "Difficulty finding a therapist or healthcare professional",
+                "Insufficient integration with clinical services"
+            ],
+            "context": [
+                "Seeking professional help for mental health concerns",
+                "Researching apps that integrate with clinical services"
+            ],
+            "constraints": [
+                "Limited knowledge about clinical services and integration",
+                "Expectations for secure and confidential communication"
+            ],
+            "evidence_reviews": [
+                "89f457e0-90a6-4570-955a-696bce251acd",
+                "66ce8112-d0e1-4303-8562-d9658241c735"
+            ]
+        }
+    ]
+}
