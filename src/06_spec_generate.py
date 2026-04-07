@@ -44,7 +44,7 @@ def generate_specifications():
 
     CONSTRAINTS:
     - Do not include any conversational filler. 
-    - Ensure every requirement is traceable to the 'derived_from_group' of the persona. [cite: 227]
+    - Ensure every requirement is traceable to the 'derived_from_group' of the persona.
     """
 
     print(f"Generating automated specifications using {MODEL}...")

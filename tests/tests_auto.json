@@ -1,15 +1,113 @@
 {
-  "tests": [
-    {
-      "test_id": "T_auto_1",
-      "requirement_id": "FR_auto_1",
-      "scenario": "Logging a workout without crashing",
-      "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
-      ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
-    }
-  ]
+    "tests": [
+        {
+            "test_id": "T_auto_1",
+            "requirement_id": "FR_auto_1",
+            "scenario": "User views pricing page and selects a plan",
+            "steps": [
+                "Navigate to the app's pricing page",
+                "Select a plan",
+                "Verify the detailed breakdown of costs"
+            ],
+            "expected_result": "The user sees a detailed breakdown of costs, including any subscription fees, taxes, or additional charges."
+        },
+        {
+            "test_id": "T_auto_2",
+            "requirement_id": "FR_auto_2",
+            "scenario": "User signs up for a free trial or basic free plan",
+            "steps": [
+                "Navigate to the app's homepage",
+                "Click on the 'Try for Free' or 'Sign Up' button",
+                "Verify access to limited features without payment"
+            ],
+            "expected_result": "The user is able to access a limited set of features without providing payment information."
+        },
+        {
+            "test_id": "T_auto_3",
+            "requirement_id": "FR_auto_3",
+            "scenario": "User launches the app for the first time",
+            "steps": [
+                "Launch the app for the first time",
+                "Verify the guided tour or onboarding process"
+            ],
+            "expected_result": "The user sees a guided tour or onboarding process that helps them understand the app's main features and navigation."
+        },
+        {
+            "test_id": "T_auto_4",
+            "requirement_id": "FR_auto_4",
+            "scenario": "User accesses the app on different devices",
+            "steps": [
+                "Access the app on a smartphone",
+                "Access the app on a tablet",
+                "Access the app on a desktop",
+                "Verify the app's layout and performance adapt smoothly"
+            ],
+            "expected_result": "The app's layout and performance adapt smoothly to each device's screen size and resolution."
+        },
+        {
+            "test_id": "T_auto_5",
+            "requirement_id": "FR_auto_5",
+            "scenario": "User views personalized insights and feedback",
+            "steps": [
+                "Track mental health data over time",
+                "Access the dashboard",
+                "Verify personalized insights and recommendations"
+            ],
+            "expected_result": "The user sees personalized insights and recommendations based on their data, including trends and areas for improvement."
+        },
+        {
+            "test_id": "T_auto_6",
+            "requirement_id": "FR_auto_6",
+            "scenario": "User tracks and monitors mental well-being",
+            "steps": [
+                "Track mental health data",
+                "Access tracking history",
+                "Verify visual representation of progress"
+            ],
+            "expected_result": "The user sees a visual representation of their progress over time, including charts, graphs, or other data visualizations."
+        },
+        {
+            "test_id": "T_auto_7",
+            "requirement_id": "FR_auto_7",
+            "scenario": "User encounters a technical issue",
+            "steps": [
+                "Use the app extensively",
+                "Encounter a technical issue",
+                "Verify the app recovers quickly and smoothly"
+            ],
+            "expected_result": "The app recovers quickly and smoothly, without losing user data or progress."
+        },
+        {
+            "test_id": "T_auto_8",
+            "requirement_id": "FR_auto_8",
+            "scenario": "User accesses error messages and troubleshooting guidance",
+            "steps": [
+                "Encounter a technical issue",
+                "Access the app's support resources",
+                "Verify relevant and actionable guidance"
+            ],
+            "expected_result": "The user sees relevant and actionable guidance on how to resolve the issue, including error messages and troubleshooting steps."
+        },
+        {
+            "test_id": "T_auto_9",
+            "requirement_id": "FR_auto_9",
+            "scenario": "User communicates with a therapist or healthcare professional",
+            "steps": [
+                "Communicate with a therapist or healthcare professional",
+                "Verify encryption and protection from unauthorized access"
+            ],
+            "expected_result": "The communication is encrypted and protected from unauthorized access."
+        },
+        {
+            "test_id": "T_auto_10",
+            "requirement_id": "FR_auto_10",
+            "scenario": "User finds and connects with a therapist or healthcare professional",
+            "steps": [
+                "Search for a therapist or healthcare professional",
+                "Filter by specialty, location, or availability",
+                "Verify a list of matching professionals"
+            ],
+            "expected_result": "The user sees a list of matching professionals, including their profiles, credentials, and contact information."
+        }
+    ]
 }
