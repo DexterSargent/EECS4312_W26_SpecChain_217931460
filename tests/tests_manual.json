@@ -1,16 +1,214 @@
-
 {
   "tests": [
     {
-      "test_id": "T_auto_1",
+      "test_id": "T_manual_01",
       "requirement_id": "FR1",
-      "scenario": "Workout Logging Stability",
+      "scenario": "Accessing Trial Reports Within 12 Months",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Login with an account where the trial ended 6 months ago",
+        "Navigate to the 'Reports' page",
+        "Select a report generated during the trial period"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The report is successfully opened in read-only PDF format."
+    },
+    {
+      "test_id": "T_manual_02",
+      "requirement_id": "FR1",
+      "scenario": "Accessing Trial Reports After 12 Months",
+      "steps": [
+        "Login with an account where the trial ended 13 months ago",
+        "Navigate to the 'Reports' page",
+        "Attempt to locate trial-period reports"
+      ],
+      "expected_result": "The trial reports are no longer visible or accessible, as the 12-month retention period has expired."
+    },
+    {
+      "test_id": "T_manual_03",
+      "requirement_id": "FR2",
+      "scenario": "Offline History Access",
+      "steps": [
+        "Disable internet connectivity",
+        "Open the application and navigate to the 'Log History' tab",
+        "Scroll through entries created within the last 72 hours"
+      ],
+      "expected_result": "All entries created within the 72-hour window are visible while offline."
+    },
+    {
+      "test_id": "T_manual_04",
+      "requirement_id": "FR2",
+      "scenario": "Offline Entry Editing",
+      "steps": [
+        "Disable internet connectivity",
+        "Select a mood entry created 12 hours ago",
+        "Edit the text note and save the changes"
+      ],
+      "expected_result": "The system allows the edit and saves the modified entry to the local cache successfully."
+    },
+    {
+      "test_id": "T_manual_05",
+      "requirement_id": "FR3",
+      "scenario": "Push Notification Timing Accuracy",
+      "steps": [
+        "Set a mood check-in reminder for 14:00",
+        "Put the application in the background",
+        "Monitor the device at 14:00"
+      ],
+      "expected_result": "A push notification is received on the device before 14:01."
+    },
+    {
+      "test_id": "T_manual_06",
+      "requirement_id": "FR3",
+      "scenario": "Notification Delivery While Device is Locked",
+      "steps": [
+        "Set a check-in reminder for 5 minutes from current time",
+        "Lock the device screen",
+        "Wait for the scheduled time"
+      ],
+      "expected_result": "The notification appears on the lock screen within 60 seconds of the scheduled time."
+    },
+    {
+      "test_id": "T_manual_07",
+      "requirement_id": "FR4",
+      "scenario": "Text Scaling to 200%",
+      "steps": [
+        "Adjust system settings font size to 200%",
+        "Launch the Mind Doc application",
+        "Navigate through the main dashboard and 'Insights' tab"
+      ],
+      "expected_result": "All text elements scale to 200% increase without truncating or overlapping other UI components."
+    },
+    {
+      "test_id": "T_manual_08",
+      "requirement_id": "FR4",
+      "scenario": "UI Readability at Maximum Scaling",
+      "steps": [
+        "Open a long journal entry with font size set to 200%",
+        "Verify that the container expands to hold the larger text"
+      ],
+      "expected_result": "The text remains fully readable and the container dimensions adapt without breaking the layout."
+    },
+    {
+      "test_id": "T_manual_09",
+      "requirement_id": "FR5",
+      "scenario": "Crisis Support Call Option",
+      "steps": [
+        "Tap the 'Crisis Support' button from the home screen",
+        "Select the 'Call' option from the pop-up menu"
+      ],
+      "expected_result": "The device's native phone/dialer app opens with the national crisis lifeline number pre-filled."
+    },
+    {
+      "test_id": "T_manual_10",
+      "requirement_id": "FR5",
+      "scenario": "Crisis Support Text Option",
+      "steps": [
+        "Access the Crisis Support pop-up from any sub-menu",
+        "Select the 'Text' option"
+      ],
+      "expected_result": "The native messaging app opens with a pre-addressed SMS to a national crisis support number."
+    },
+    {
+      "test_id": "T_manual_11",
+      "requirement_id": "FR6",
+      "scenario": "Enabling High-Contrast Mode",
+      "steps": [
+        "Navigate to Settings > Display",
+        "Toggle 'High Contrast Display Mode' to ON",
+        "Return to the Dashboard"
+      ],
+      "expected_result": "The UI updates to a high-contrast theme meeting WCAG 2.2 AAA standards (ratio > 7:1)."
+    },
+    {
+      "test_id": "T_manual_12",
+      "requirement_id": "FR6",
+      "scenario": "High-Contrast Consistency Across Screens",
+      "steps": [
+        "Enable High Contrast mode",
+        "Navigate through 'Insights', 'Journal', and 'Account' pages"
+      ],
+      "expected_result": "Every screen in the application reflects the selected high-contrast mode settings."
+    },
+    {
+      "test_id": "T_manual_13",
+      "requirement_id": "FR7",
+      "scenario": "Keyword Search Speed Validation",
+      "steps": [
+        "Create a journal entry containing the word 'Anxiety'",
+        "Enter 'Anxiety' into the search bar",
+        "Trigger the search"
+      ],
+      "expected_result": "Matching results are filtered and displayed on the screen in less than 500ms."
+    },
+    {
+      "test_id": "T_manual_14",
+      "requirement_id": "FR7",
+      "scenario": "Search Performance with No Results",
+      "steps": [
+        "Input a non-existent random string in the search bar",
+        "Trigger the search"
+      ],
+      "expected_result": "The system processes the search and displays the empty state in under 500ms."
+    },
+    {
+      "test_id": "T_manual_15",
+      "requirement_id": "FR8",
+      "scenario": "Trend Visualization Trigger (5 Entries)",
+      "steps": [
+        "Log 5 unique mood entries into a new account",
+        "Navigate to the 'Insights' dashboard"
+      ],
+      "expected_result": "A mood trend line graph is rendered successfully within 1.5 seconds."
+    },
+    {
+      "test_id": "T_manual_16",
+      "requirement_id": "FR8",
+      "scenario": "Trend Visualization Suppression (< 5 Entries)",
+      "steps": [
+        "Log only 4 mood entries",
+        "Navigate to the 'Insights' dashboard"
+      ],
+      "expected_result": "The trend visualization is not displayed, and a message appears stating more logs are needed."
+    },
+    {
+      "test_id": "T_manual_17",
+      "requirement_id": "FR9",
+      "scenario": "Successful 30-Day PDF Generation",
+      "steps": [
+        "Generate 30 days worth of logs",
+        "Tap the 'Generate 30-Day Report' button"
+      ],
+      "expected_result": "A PDF file is generated containing all 30 days of mood data and notes."
+    },
+    {
+      "test_id": "T_manual_18",
+      "requirement_id": "FR9",
+      "scenario": "PDF Content Chronology Check",
+      "steps": [
+        "Generate a 30-day report",
+        "Open the PDF and check the order of entries"
+      ],
+      "expected_result": "All entries are listed in chronological order from oldest to newest."
+    },
+    {
+      "test_id": "T_manual_19",
+      "requirement_id": "FR10",
+      "scenario": "Secure Link Email Delivery",
+      "steps": [
+        "Generate a report PDF",
+        "Select 'Share via Email' and enter a recipient address",
+        "Check the recipient's inbox"
+      ],
+      "expected_result": "The recipient receives an email containing a secure, encrypted link to download the report."
+    },
+    {
+      "test_id": "T_manual_20",
+      "requirement_id": "FR10",
+      "scenario": "Secure Link Expiration Validation",
+      "steps": [
+        "Send a secure report link to an email address",
+        "Attempt to click the link 25 hours after it was sent"
+      ],
+      "expected_result": "The link fails to open or redirects to an 'Expired' page, adhering to the 24-hour expiration limit."
     }
   ]
 }
