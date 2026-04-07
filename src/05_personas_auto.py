@@ -1,4 +1,4 @@
-"""automated persona generation pipeline for EECS 4312"""
+"""automated persona generation pipeline"""
 import json
 import os
 import time
@@ -40,7 +40,7 @@ def run_task_4_1_and_4_2():
 
     manual_themes = [g['theme'] for g in manual_data.get('groups', [])]
     
-    # STAGE 1: Seed Batch (First 100) to define themes
+    # Seed Batch (First 100) to define themes
     seed_batch = [{"id": r["reviewId"], "text": r["content"]} for r in all_reviews[:100]]
     
     seed_prompt = f"""
@@ -84,7 +84,7 @@ def run_task_4_1_and_4_2():
     defined_themes = seed_results.get('themes', [])
     final_groups = seed_results.get('groups', [])
 
-    # STAGE 2: Batch Processing remaining reviews (up to 1000 for efficiency)
+    # Batch processing to avoid rate limits
     batch_size = 100
     max_reviews = min(1000, len(all_reviews))
     for i in range(100, max_reviews, batch_size):
