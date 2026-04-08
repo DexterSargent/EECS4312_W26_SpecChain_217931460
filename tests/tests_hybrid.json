@@ -1,16 +1,124 @@
 {
   "tests": [
     {
-      "test_id": "T_hybrid_1",
+      "test_id": "T_hybrid_01",
       "requirement_id": "FR_hybrid_1",
-      "scenario": "Save a workout entry without crashing",
+      "scenario": "Accessing historical data with an expired subscription",
       "steps": [
-        "Open the workout logging feature",
-        "Enter workout information",
-        "Submit the workout"
+        "Log in with a user account where the premium subscription has expired",
+        "Navigate to the 'History' tab",
+        "Attempt to open a mood log entry from three months ago"
       ],
-      "expected_result": "The workout is saved successfully and the application does not crash.",
-      "notes": "Revised the expected result to match the updated hybrid requirement."
+      "expected_result": "The historical log entry is displayed in full without a paywall or upgrade prompt blocking the view.",
+      "notes": "Revised to ensure accessibility of data regardless of payment status as per Task 5.4."
+    },
+    {
+      "test_id": "T_hybrid_02",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Verifying cost transparency on subscription splash screen",
+      "steps": [
+        "Open the 'Go Premium' subscription page",
+        "Locate the Annual and Monthly plan cards",
+        "Check for the presence of total cycle costs"
+      ],
+      "expected_result": "The exact monthly and annual prices are clearly visible on the primary screen without needing to click additional 'details' links.",
+      "notes": "Added to address budgeter transparency concerns."
+    },
+    {
+      "test_id": "T_hybrid_03",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Immediate interface language update",
+      "steps": [
+        "Navigate to 'Settings' > 'Language Selection'",
+        "Select 'Spanish' from the dropdown menu",
+        "Navigate back to the main Dashboard"
+      ],
+      "expected_result": "All headings, buttons, and navigation labels are immediately translated into Spanish.",
+      "notes": "Links to the refined global accessibility requirement."
+    },
+    {
+      "test_id": "T_hybrid_04",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Home screen widget interaction count",
+      "steps": [
+        "Add the 'Quick Log' widget to the mobile home screen",
+        "Tap a specific mood icon (e.g., Happy) on the widget",
+        "Open the main app to check the log history"
+      ],
+      "expected_result": "The mood is saved in exactly one tap from the home screen, and the entry appears correctly in the database.",
+      "notes": "Focuses on the 'under three interactions' constraint."
+    },
+    {
+      "test_id": "T_hybrid_05",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Availability of specific emotional states",
+      "steps": [
+        "Initiate a daily check-in flow",
+        "Proceed to the primary emotion selection screen",
+        "Locate 'Stressed' and 'Overwhelmed' options"
+      ],
+      "expected_result": "Both 'Stressed' and 'Overwhelmed' appear as selectable primary buttons.",
+      "notes": "Ensures the specific vocabulary correction is verified."
+    },
+    {
+      "test_id": "T_hybrid_06",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Monthly trend report correlation check",
+      "steps": [
+        "Complete at least one educational course during the month",
+        "Generate the monthly 'Mental Health Trend Report'",
+        "Look for course completion markers on the trend line"
+      ],
+      "expected_result": "The report displays a visual correlation between mood improvements and the dates of course completion.",
+      "notes": "Revised for measurable visual correlation as per hybrid requirements."
+    },
+    {
+      "test_id": "T_hybrid_07",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Suppression of frequent app review prompts",
+      "steps": [
+        "Trigger an app review prompt and dismiss it",
+        "Simulate 30 days of daily app launches",
+        "Check if a review prompt appears on day 31"
+      ],
+      "expected_result": "No review request pop-up appears, as the 90-day cooldown period has not elapsed.",
+      "notes": "Tests the specific timing constraint defined in the refined spec."
+    },
+    {
+      "test_id": "T_hybrid_08",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Offline entry preservation and sync",
+      "steps": [
+        "Enable Airplane Mode to lose internet connection",
+        "Submit a mood log entry with a text note",
+        "Re-enable internet connection"
+      ],
+      "expected_result": "The app confirms local saving while offline and automatically syncs the entry to the server upon reconnection.",
+      "notes": "Ensures stability-first users do not lose data during outages."
+    },
+    {
+      "test_id": "T_hybrid_09",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Therapy report PDF PIN protection",
+      "steps": [
+        "Select 'Generate Therapy Report'",
+        "Input a 4-digit PIN when prompted",
+        "Attempt to open the resulting PDF file"
+      ],
+      "expected_result": "The PDF viewer requires the 4-digit PIN before the content can be accessed.",
+      "notes": "Verifies the security constraint for clinical collaboration."
+    },
+    {
+      "test_id": "T_hybrid_10",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Professional search performance and data accuracy",
+      "steps": [
+        "Navigate to 'Find a Professional'",
+        "Filter by 'Psychologist' and '10km radius'",
+        "Measure the time from 'Apply' to results display"
+      ],
+      "expected_result": "Matching profiles appear in under 2.0 seconds with badges, phone numbers, and booking buttons visible.",
+      "notes": "Directly validates the specific performance metrics from the hybrid rewrite."
     }
   ]
 }
