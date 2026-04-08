@@ -16,7 +16,7 @@ def calculate_metrics(pipeline_type="auto"):
         "output": f"metrics/metrics_{pipeline_type}.json"
     }
 
-    # 1. Dataset Size (Total cleaned reviews)
+    # 1. Dataset Size
     total_reviews = 0
     if os.path.exists(paths["reviews"]):
         with open(paths["reviews"], 'r', encoding='utf-8') as f:
@@ -30,7 +30,7 @@ def calculate_metrics(pipeline_type="auto"):
             personas = data.get("personas", [])
     persona_count = len(personas)
 
-    # 3. Requirements Count & Traceability (Parse Markdown)
+    # 3. Requirements Count & Traceability
     req_ids = []
     req_with_persona = 0
     ambiguous_reqs = 0
@@ -39,22 +39,20 @@ def calculate_metrics(pipeline_type="auto"):
     if os.path.exists(paths["spec"]):
         with open(paths["spec"], 'r', encoding='utf-8') as f:
             content = f.read()
-            # Find all Requirement IDs
+
             req_ids = re.findall(r"Requirement ID:\s*(\S+)", content)
             
-            # Check for Source Persona links and Ambiguity
             sections = re.split(r"# Requirement ID:", content)[1:]
             for section in sections:
-                if "Source Persona:" in section and "[" not in section: # Simple check for filled persona
+                if "Source Persona:" in section and "[" not in section:
                     req_with_persona += 1
-                
-                # Ambiguity check
+
                 if any(term in section.lower() for term in vague_terms):
                     ambiguous_reqs += 1
     
     req_count = len(req_ids)
 
-    # 4. Tests Count & Testability
+    # 4. Tests Count
     tests = []
     tested_req_ids = set()
     if os.path.exists(paths["tests"]):
@@ -65,7 +63,7 @@ def calculate_metrics(pipeline_type="auto"):
                 tested_req_ids.add(t.get("requirement_id"))
     test_count = len(tests)
 
-    # 5. Review Coverage (Unique reviews in groups)
+    # 5. Review Coverage
     covered_reviews = set()
     if os.path.exists(paths["groups"]):
         with open(paths["groups"], 'r', encoding='utf-8') as f:
@@ -91,7 +89,7 @@ def calculate_metrics(pipeline_type="auto"):
         "ambiguity_ratio": round(ambiguous_reqs / req_count, 4) if req_count > 0 else 0
     }
 
-    # Save Results
+    # Save
     os.makedirs('metrics', exist_ok=True)
     with open(paths["output"], 'w', encoding='utf-8') as f:
         json.dump(metrics, f, indent=4)
@@ -100,6 +98,6 @@ def calculate_metrics(pipeline_type="auto"):
     return metrics
 
 if __name__ == "__main__":
-    # Default to 'auto' if no argument is provided
+
     p_type = sys.argv[1] if len(sys.argv) > 1 else "auto"
     calculate_metrics(p_type)

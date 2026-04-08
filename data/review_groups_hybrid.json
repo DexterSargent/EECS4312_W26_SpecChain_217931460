@@ -1,13 +1,111 @@
-{  "groups": [
-    {
-      "group_id": "H1",
-      "theme": "Workout logging failures during activity tracking",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
-      "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
-      ],
-      "notes": "Removed one unrelated review about login problems from the original automated group."
-    }
-  ]
+{
+    "groups": [
+        {
+            "group_id": "hybrid_G1",
+            "theme": "Frustration with Paywalls and Subscription Model Value Perception",
+            "review_ids": [
+                "4cf4ff8a-3aec-4219-ba79-5cc645cc1b15",
+                "7af7329a-d6ad-4ccc-aa83-689da8e7eda3",
+                "a360c212-f023-438c-991b-a3f28f3dd7ba",
+                "39ef38ce-b7ed-4ad1-b391-98344d8e366d",
+                "5ffe111a-651f-4947-abd1-5a5e833fd3b2",
+                "ac69af3d-8de2-4bf1-bc05-8f5f08e1ba66",
+                "e45752e5-ba84-41b6-be18-d6a920a2f523",
+                "c086cabd-06df-428e-bbba-864e4bd0778c",
+                "3d61709a-0872-45b0-a4d8-27d8db423c5a",
+                "81ea4070-530d-4a5e-b48e-73d9eb3b5245", 
+                "97338a5f-cf87-401f-8db3-a43df1a36ab0",
+                "d862ae67-c1c7-46fd-a741-e15c54c57d22", 
+                "ac523545-bdc5-4534-a6eb-ab964539907e"
+            ],
+            "example_reviews": [
+                "edit ive used mood tracker year recently used paywall quite expensive hide previous data outrageous im changing review star find different mood tracker uninstalling redacted ive used mood tracking apps one favorite find added question assessment useful recommend",
+                "everything introduction paywalled need app notice affect mood downloaded mental health resource use something offer chance text benefit charging"
+            ],
+            "notes": "Reworded theme name. removed one review for not providing specific feedback on the app, changed one example review that wasn't found in groups review_id's. Added 3 reviews that mentioned specific paywall issues. moved one review from g3 to g1"
+        },
+        {
+            "group_id": "auto_G2",
+            "theme": "App Functionality and User Experience",
+            "review_ids": [
+                "4c647c1c-6e45-442c-a691-42ee61a230a1",
+                "11eaf701-f192-4fe1-b934-82fc5aae67d1",
+                "25942a27-320a-4e7e-a7b4-3153bd5b405f",
+                "744404cb-b45b-4d48-a82d-aad7f42ecb69",
+                "b9ef6b5a-632b-495a-9e62-969a23fae1d0",
+                "827abad8-c21a-4f99-b1d6-f1c8dced667c",
+                "3bc9f848-fdd6-4fbc-9c95-83d022623b5c",
+                "f3d3b5d7-cde8-45b6-8f9a-09cbfb3b7a7d",
+                "e43cabdd-bfdf-412d-a5b5-c9bcc761aab2",
+                "e4bcd851-5bff-4b95-8a03-266541a40ce0", 
+                "86af73fa-a0df-4a74-8893-31db3caaea2f"
+            ],
+            "example_reviews": [
+                "good app cannot change the language",
+                "good pace good match content x daily check track mood"
+            ],
+            "notes": "Removed 1 review that did not speak to the apps functionality, which was also an example review, so the example was replaced too. Added 2 relevant reviews"
+        },
+        {
+            "group_id": "hybrid_G3",
+            "theme": "Mental Health Insights and Support",
+            "review_ids": [
+                "6f006dd6-ee8c-44db-b8c8-2b5ad3570d1c",
+                "b893372f-9355-42b4-a296-8de516f710cd",
+                "5036b45c-d0ea-4320-8218-611ca36535d1",
+                "bbb31449-236a-4773-87be-97b1b0c64a8d",
+                "680396ab-93d4-4113-8d5b-a57dd6cc495f",
+                "e35d746a-4924-478d-92f2-c5184cc7c8c3",
+                "bc24eb71-77c8-4ef8-82ba-dbc6c03d5e4c",
+                "81c6e690-0ce4-4d0f-acf6-e2678939e1aa",
+                "9227f32e-acba-415f-960c-43fbb58e312d",
+                "d2721057-fa68-4a14-9a53-9f87fecb7959"
+            ],
+            "example_reviews": [
+                "app great completely free check mood answer handful question time day private course look material course follow depending feel need like exhausted want increase strength mentally physically etc highly recommended",
+                "really helpful daily reminder track mood also like give report overall mental health track think emotion choice bit limitedfor example im surprised stressed isnt overall good app"
+            ],
+            "notes": "Removed one review that lacked substance. Moved 1 review to g1. Added 2 relevant reviews."
+        },
+        {
+            "group_id": "auto_G4",
+            "theme": "Technical Issues and Bugs",
+            "review_ids": [
+                "d07ac3a5-2557-4ac8-a70c-27abf4f3c7db",
+                "e6619604-b5d3-49c1-8733-09c6373b0e1d",
+                "735dd19a-1b69-4ce1-81a9-77c33b5312d1",
+                "abe48d35-6cad-40f8-b5d9-a176ee371a4e",
+                "967136a2-4e76-484b-99d1-6717ce5f89d9",
+                "99662db6-51dd-416c-80c3-1150cb7c75d1",
+                "5682358e-040c-4042-8bd2-d96ead6dfff3",
+                "bd7041ed-592e-4fa9-b2e0-c047407c7123",
+                "a0754d91-6af4-45bb-a21a-f3ecaf3bfd63"
+            ],
+            "example_reviews": [
+                "dont like logging method",
+                "pretty good app used every day two year biweekly result great way see sort big picture im feeling update negative say app keep asking leave review every day despite fact already left review review good three year ago"
+            ],
+            "notes": "Removed 4 reviews that didn't fit the theme. Added 3 relavent reviews. Changed example review"
+        },
+        {
+            "group_id": "auto_G5",
+            "theme": "Professional and Clinical Integration",
+            "review_ids": [
+                "89f457e0-90a6-4570-955a-696bce251acd",
+                "66ce8112-d0e1-4303-8562-d9658241c735",
+                "becdaea2-c8f7-41c9-a504-e7727dc8c328",
+                "36e0167b-6774-4bc1-8705-58458a707ab1",
+                "94c72d45-0229-46e3-97a8-7220b6e138b4",
+                "416d5016-8ff9-490b-8fdb-dcf7eb9f1d29",
+                "afc24601-34a5-42cd-8695-f7073c2003f2",
+                "014e7949-fa7e-4897-98fd-b228f6eeebb7",
+                "9e67810a-0f04-455e-80e3-ebc69baf39d5"
+            ],
+            "example_reviews": [
+                "really helpful edit well using app two week damn never thought would perfect literally best app ever downloaded entire life really help made seriously consider therapist step made pay attention responded question suicidal thought underestimation matter sent therapy rebort based application realistic",
+                "great app currently error try sign premium membership impossible upgrade moment cannot use premium feature ive sent email told known issue would resolved soon however still resolved still cannot upgrade resolve issue change rating thanks"
+            ],
+            "notes": "removed one review that didnt fit theme."
+        }
+    ]
 }
