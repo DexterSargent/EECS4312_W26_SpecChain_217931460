@@ -1,31 +1,140 @@
 {
   "personas": [
     {
-      "id": "P_hybrid_1",
-      "name": "Frequent Fitness Logger",
-      "description": "A user who depends on the app for regular workout tracking and expects logging to work reliably during or immediately after exercise.",
-      "derived_from_group": "H1",
+      "id": "hybrid_P1",
+      "name": "Value-Seeking Budgeter",
+      "description": "A long-term user or new seeker who is discouraged by high subscription costs and the locking of historical data behind paywalls.",
+      "derived_from_group": "hybrid_G1",
       "goals": [
-        "Log workouts quickly",
-        "Track activities without interruption"
+        "Access mental health tracking without high financial barriers",
+        "Retain access to previously entered personal data"
       ],
       "pain_points": [
-        "The app crashes while saving workouts",
-        "Previously entered activity data may disappear"
+        "Sudden paywalls on features that were previously free",
+        "High subscription prices compared to perceived app value",
+        "Feeling exploited when seeking mental health support"
       ],
       "context": [
-        "Using the app during exercise sessions",
-        "Using the app outdoors or while moving"
+        "Searching for affordable alternatives to expensive mood trackers",
+        "Evaluating if premium features justify the monthly cost"
       ],
       "constraints": [
-        "Workout logging must complete without crashing",
-        "Saved workout data must persist"
+        "Strictly limited budget for digital wellness tools",
+        "Will uninstall if historical data is held 'hostage' by a paywall"
       ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_41"
+        "4cf4ff8a-3aec-4219-ba79-5cc645cc1b15",
+        "7af7329a-d6ad-4ccc-aa83-689da8e7eda3"
       ],
-      "notes": "Refined the persona description and removed an unsupported assumption about synchronization."
+      "notes": "Refined name to reflect 'Value-Seeking' rather than just 'Frustrated'. Grounded pain points in the specific feedback found in reviews."
+    },
+    {
+      "id": "hybrid_P2",
+      "name": "Global Experience Evaluator",
+      "description": "A user focused on the day-to-day usability of the app, specifically concerned with language accessibility and interface navigation.",
+      "derived_from_group": "hybrid_G2",
+      "goals": [
+        "Use the app in their native or preferred language",
+        "Maintain a consistent daily check-in routine with minimal friction"
+      ],
+      "pain_points": [
+        "Inability to change the application language settings",
+        "General navigation issues that hinder quick mood tracking"
+      ],
+      "context": [
+        "Using the app for daily mental health check-ins",
+        "Navigating settings to customize the user experience"
+      ],
+      "constraints": [
+        "Requires multi-language support for full comprehension",
+        "Limited time for data entry during the day"
+      ],
+      "evidence_reviews": [
+        "4c647c1c-6e45-442c-a691-42ee61a230a1",
+        "744404cb-b45b-4d48-a82d-aad7f42ecb69"
+      ],
+      "notes": "Focused the persona on language barriers and daily routine consistency based on group hybrid_G2 reviews."
+    },
+    {
+      "id": "hybrid_P3",
+      "name": "Insight-Driven Self-Tracker",
+      "description": "A proactive user who utilizes the app to identify patterns in their mental health and expects nuanced emotional descriptors.",
+      "derived_from_group": "hybrid_G3",
+      "goals": [
+        "Receive comprehensive reports on overall mental health trends",
+        "Find specific content/courses that match their current emotional state"
+      ],
+      "pain_points": [
+        "Limited emotional vocabulary (e.g., missing 'stressed' as an option)",
+        "Desire for more in-depth data analysis over time"
+      ],
+      "context": [
+        "Reviewing weekly or monthly mental health reports",
+        "Engaging with educational material to improve physical and mental strength"
+      ],
+      "constraints": [
+        "Expects data-driven insights rather than just simple logging",
+        "Requires privacy for sensitive emotional data"
+      ],
+      "evidence_reviews": [
+        "6f006dd6-ee8c-44db-b8c8-2b5ad3570d1c",
+        "b893372f-9355-42b4-a296-8de516f710cd"
+      ],
+      "notes": "Updated goals to include matching content to feelings and refined pain points to include the specific 'missing labels' feedback."
+    },
+    {
+      "id": "hybrid_P4",
+      "name": "Stability-First Daily User",
+      "description": "A long-term user whose trust is eroded by persistent bugs, intrusive review prompts, and login failures.",
+      "derived_from_group": "hybrid_G4",
+      "goals": [
+        "Maintain a multi-year streak of tracking without data loss",
+        "Experience a bug-free interface during daily interactions"
+      ],
+      "pain_points": [
+        "Intrusive and repetitive requests to leave reviews",
+        "Technical failures in the logging process"
+      ],
+      "context": [
+        "Long-term usage (2+ years) of the application",
+        "Responding to system prompts and update notifications"
+      ],
+      "constraints": [
+        "Low tolerance for workflow interruptions (like pop-ups)",
+        "Reliance on stable software for consistent habit-building"
+      ],
+      "evidence_reviews": [
+        "d07ac3a5-2557-4ac8-a70c-27abf4f3c7db",
+        "967136a2-4e76-484b-99d1-6717ce5f89d9"
+      ],
+      "notes": "Added the specific pain point of 'repetitive review requests' which was prominent in the G4 review group."
+    },
+    {
+      "id": "hybrid_P5",
+      "name": "Clinical Transitioner",
+      "description": "A user who views the app as a bridge to professional clinical care and expects seamless transitions to therapy.",
+      "derived_from_group": "hybrid_G5",
+      "goals": [
+        "Use app-generated reports to inform professional therapy sessions",
+        "Upgrade to premium features to access clinical-grade support"
+      ],
+      "pain_points": [
+        "Technical errors preventing the purchase of premium memberships",
+        "Lack of response or resolution from support regarding billing bugs"
+      ],
+      "context": [
+        "Transitioning from self-help tracking to seeking a professional therapist",
+        "Attempting to upgrade account status for better resources"
+      ],
+      "constraints": [
+        "Needs reliable payment processing to access critical features",
+        "Depends on the accuracy of 'therapy reports' generated by the app"
+      ],
+      "evidence_reviews": [
+        "89f457e0-90a6-4570-955a-696bce251acd",
+        "66ce8112-d0e1-4303-8562-d9658241c735"
+      ],
+      "notes": "Highlighted the frustration of being unable to pay for premium services despite wanting to, as noted in the G5 reviews."
     }
   ]
 }
